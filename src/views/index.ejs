@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nexus Store</title>
+</head>
+<body>
+    <h1>Catálogo de Productos (Web)</h1>
+    <ul>
+        <% products.forEach(p => { %>
+            <li><%= p.name %> - $<%= p.price %></li>
+        <% }) %>
+    </ul>
+    <p><a href="/api/products">Ver en formato API (JSON)</a></p>
+</body>
+</html>
